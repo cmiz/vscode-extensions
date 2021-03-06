@@ -2,7 +2,7 @@
 
 クリップボードのTSVテキストをJSONに変換してエディタにペーストします。
 
-![screenshot](screenshot.gif)
+![screenshot](https://user-images.githubusercontent.com/69108539/110209693-19bccb80-7ed1-11eb-87a3-31c31f9c0d71.gif)
 
 # Create VSIX
 
