@@ -1,5 +1,5 @@
 {
-	"publisher": "tsv-paste-json",
+	"publisher": "cmiz",
 	"name": "tsv-paste-json",
 	"displayName": "TSV Paste JSON",
 	"description": "クリップボードのTSVテキストをJSONに変換してペースト",
