@@ -2,7 +2,7 @@
 	"name": "tsv-paste-json",
 	"displayName": "TSV Paste JSON",
 	"description": "クリップボードのTSVテキストをJSONに変換してペースト",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "cmiz",
 	"author": {
 	  "name": "cmiz"
@@ -30,6 +30,16 @@
 				"group": "TSV paste JSON",
 				"when": "editorTextFocus"
 			}]
+		},
+		"configuration": {
+			"title": "TSV Paste JSON",
+			"properties": {
+				"tsvPasteJson.stringify.space": {
+					"type": "string",
+					"default": "4",
+					"markdownDescription": "Specify the whitespace to indent the JSON. This is the third argument of `JSON.stringify()`. Only numeric characters [0-9] will be converted to integer values. The default value `4` is an indentation of 4 spaces. `\\t` will be converted to a TAB character."
+				}
+			}
 		}
 	},
 	"scripts": {

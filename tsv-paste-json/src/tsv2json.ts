@@ -1,7 +1,7 @@
 //
 // TSVテキストをJSON化する
 //
-export default function tsv2json(text: string) {
+export default function tsv2json(text: string, space: string|number) {
   // 改行とTABで行列分割
   // 参考：https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/
   // 参考：https://github.com/jonmagic/copy-excel-paste-markdown/blob/master/script.js
@@ -22,7 +22,7 @@ export default function tsv2json(text: string) {
     if (!rows[0].length) return "";
 
     // 1列
-    if (rows[0].length === 1) return JSON.stringify(rows[0][0], null, 4);
+    if (rows[0].length === 1) return JSON.stringify(rows[0][0], null, space);
 
     // 2列
     // ----------
@@ -33,7 +33,7 @@ export default function tsv2json(text: string) {
       const array = {
         [rows[0][0]]: rows[0][1],
       };
-      return JSON.stringify(array, null, 4);
+      return JSON.stringify(array, null, space);
     }
 
     // 3列以上
@@ -44,7 +44,7 @@ export default function tsv2json(text: string) {
     const array = {
       [rows[0][0]]: rows[0].slice(1),
     };
-    return JSON.stringify(array, null, 4);
+    return JSON.stringify(array, null, space);
   }
 
   // 2行以上
@@ -93,5 +93,5 @@ export default function tsv2json(text: string) {
     return array;
   }
 
-  return JSON.stringify(array, null, 4);
+  return JSON.stringify(array, null, space);
 }
