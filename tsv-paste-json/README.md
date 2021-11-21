@@ -1,6 +1,6 @@
 # TSV Paste JSON
 
-クリップボードのTSVテキストをJSONに変換してエディタにペーストします。
+Convert the TSV text in the clipboard to JSON and paste it into the editor.
 
 ![screenshot](https://user-images.githubusercontent.com/69108539/110209693-19bccb80-7ed1-11eb-87a3-31c31f9c0d71.gif)
 
