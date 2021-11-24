@@ -1,7 +1,7 @@
 {
 	"name": "tsv-paste-json",
 	"displayName": "TSV Paste JSON",
-	"description": "クリップボードのTSVテキストをJSONに変換してペースト",
+	"description": "Convert the TSV text in the clipboard to JSON and paste it into the editor.",
 	"version": "0.0.2",
 	"publisher": "cmiz",
 	"author": {
@@ -12,6 +12,9 @@
 	},
 	"categories": [
 		"Other"
+	],
+	"keywords": [
+		"tsv", "json"
 	],
 	"activationEvents": [
 		"*"
