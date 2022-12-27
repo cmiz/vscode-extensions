@@ -2,7 +2,7 @@
 	"name": "tsv-paste-json",
 	"displayName": "TSV Paste JSON",
 	"description": "Convert the TSV text in the clipboard to JSON and paste it into the editor.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "cmiz",
 	"author": {
 	  "name": "cmiz"
@@ -17,7 +17,7 @@
 		"tsv", "json"
 	],
 	"activationEvents": [
-		"*"
+		"onCommand:tsv-paste-json.paste"
 	],
 	"main": "./out/extension.js",
 	"contributes": {

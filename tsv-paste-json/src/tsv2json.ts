@@ -3,11 +3,12 @@
 //
 export default function tsv2json(text: string, space: string|number) {
   // 改行とTABで行列分割
-  // 参考：https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/
   // 参考：https://github.com/jonmagic/copy-excel-paste-markdown/blob/master/script.js
   const rows = text
     .trim()
-    .split(/[\u0085\u2028\u2029]|\r\n?/g)
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .split(/[\u0085\u2028\u2029]|\n/g)
     .map((row) => {
       row = row.replace("\n", " ");
       return row.split("\t");
